@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tienda de Electrónica</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+        }
+        .product-card p {
+            color: #888;
+        }
+        .product-card .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tienda de Electrónica</h1>
+    </header>
+
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Productos</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <h2>Productos Destacados</h2>
+        <div class="products">
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Producto 1">
+                <h3>Smartphone XYZ</h3>
+                <p>Último modelo, cámara de 64 MP</p>
+                <p class="price">$299.99</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Producto 2">
+                <h3>Tablet ABC</h3>
+                <p>Pantalla de 10.1", batería de larga duración</p>
+                <p class="price">$199.99</p>
+                <button>Añadir al carrito</button>
+            </div>
+            <div class="product-card">
+                <img src="https://via.placeholder.com/300" alt="Producto 3">
+                <h3>Ordenador portátil DEF</h3>
+                <p>Procesador Intel Core i7, 16GB RAM</p>
+                <p class="price">$799.99</p>
+                <button>Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Tienda de Electrónica. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
